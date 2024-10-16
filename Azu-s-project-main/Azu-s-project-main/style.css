@@ -26,7 +26,38 @@ h1 {
     -webkit-background-clip: text;
     background-clip: text; 
 }
-
+.image-container {
+    position: relative;
+    width: 100%; 
+    max-width: 600px; 
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  h2, h4 {
+    margin: 0;
+  }
+  
+  h5 {
+    font-size: 2em; 
+    text-align: left;
+    font-size: 50px;
+  }
+  h4 {
+    font-size: 1.2em; 
+  }
 .btn{
     padding: 15,30 ;
     transition: all 0.5 ease ;
@@ -56,7 +87,6 @@ h1 {
     align-items: center;
 }
 
-/* Button styling */
 .but {
     display: flex;
     flex-direction: column;
@@ -64,7 +94,7 @@ h1 {
     justify-content: center;
     position: relative;
     width: 450px;
-    height: 120px;
+    height: 110px;
     text-decoration: none;
     letter-spacing: 2px;
     text-align: center;
@@ -192,6 +222,9 @@ p{
     border-radius: 20px;
     background-color: #7a2fdb98;
 }
+.saying{
+    font-size: 20px;
+}
 
 #faq{
     background-color: rgb(0, 0, 0,);
@@ -199,7 +232,6 @@ p{
 
 .accordion-item{
     margin-bottom: 20px;
-    border-radius: 0 !important;
 }
 .accordion-button{
     background-color: #5b41cc00;
@@ -228,3 +260,43 @@ p{
     color: #ffffff
 
 }
+.footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url('foter.gif') no-repeat center center; 
+    background-size: cover;
+    position: relative; 
+    color: #fff; 
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.footer .container {
+    position: relative;
+    z-index: 2; 
+}
+
+#footer ul.list-unstyled li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#footer ul.list-unstyled li:hover a {
+    color: rgb(8, 47, 😎;
+}
+
+.btn-outline-light {
+    border-color: #FFF;
+    color: #FFF;
+    border-radius: 0;
+}
+
